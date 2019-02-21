@@ -1,1 +1,35 @@
 // Navigation Styles here
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    vertical-align: middle;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem  6rem 2rem 6rem;
+    border-bottom: 1px dashed black;
+
+    .home-title {
+        vertical-align: center;
+        border: 1px solid black;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        width: 40%;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                text-decoration: underline;
+                color: black;
+            }
+        } // a
+    } //nav
+} // header
