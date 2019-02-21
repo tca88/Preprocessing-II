@@ -5,6 +5,14 @@ header {
     
     .header-mixin();
 
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        background: white;
+        margin-top: 0;
+      }
+
     .home-title {
         vertical-align: center;
     }
@@ -16,14 +24,32 @@ header {
         font-size: 1.4rem;
         width: 40%;
 
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.8rem;
+            width: 100%;
+          }
+
         a {
             text-decoration: none;
             color: black;
 
             &:hover {
-                text-decoration: underline;
-                color: black;
+                color: #008080;
             }
+
+            @media @mobile {
+                padding: 1.6rem 0 1.6rem;
+                border-bottom: 1px solid #008080;
+                width: 100%;
+                text-align: center;
+
+                &:last-child {
+                    margin-bottom: 0;
+                    border-bottom: none;
+                }
+              }
         } // a
     } //nav
 } // header
