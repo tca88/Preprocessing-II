@@ -1,7 +1,7 @@
 .home {
 
   .main-header-content {
-    padding: 0 6rem 0 6rem;
+    padding: @main-padding;
 
     .main-header-content-text {
       margin: 2rem 0 0 0;
@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: @main-padding;
 
    
     
@@ -60,10 +61,16 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    padding-left: 6rem;
+    padding-right: 6rem;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button();
+      }
     }
   }
 }// home
