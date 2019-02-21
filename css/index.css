@@ -175,8 +175,8 @@ header {
   justify-content: space-between;
   align-items: baseline;
   vertical-align: middle;
-  margin: 2rem 0 1rem 0;
-  padding: 1rem  6rem 2rem 6rem;
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 6rem 2rem 6rem;
   border-bottom: 1px dashed black;
 }
 header .home-title {

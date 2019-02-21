@@ -1,14 +1,23 @@
 // Navigation Styles here
-header {
+
+//mixins
+.header-mixin() {
+
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     vertical-align: middle;
-    margin: 2rem 0 1rem 0;
-    padding: 1rem  6rem 2rem 6rem;
+    margin: 1rem 0 1rem 0;
+    padding: .5rem  6rem 2rem 6rem;
     border-bottom: 1px dashed black;
+}
+
+//variables
+header {
+    
+    .header-mixin();
 
     .home-title {
         vertical-align: center;
