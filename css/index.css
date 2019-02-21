@@ -178,6 +178,7 @@ header {
   margin: 1rem 0 0 0;
   padding: 0.5rem 6rem 2rem 6rem;
   border-bottom: 1px dashed black;
+  background: white;
 }
 @media ( max-width: 500px ) {
   header {
@@ -204,6 +205,7 @@ header nav {
     font-size: 1.8rem;
     width: 100%;
     padding-top: 1rem;
+    background: white;
   }
 }
 header nav a {
@@ -224,6 +226,22 @@ header nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home > section {
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+}
+.home > div {
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home .main-header-content {
   padding: 0 3rem 0 3rem;
 }
@@ -239,7 +257,7 @@ header nav a:hover {
   .home .main-header-content {
     border-bottom: 2px dashed gray;
     margin: 0 2rem 0 2rem;
-    padding-top: 9rem;
+    padding-top: 9.4rem;
     padding-bottom: 0;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -352,8 +370,8 @@ header nav a:hover {
   }
 }
 .home .content-pick .destination .btn {
-  border-radius: 1.2rem;
-  padding: 1rem 0 1rem 0;
+  border-radius: 1.4rem;
+  padding: 1.5rem 0 1.5rem 0;
   font-size: 1.4rem;
   width: 80%;
   text-align: center;
@@ -361,4 +379,11 @@ header nav a:hover {
   margin-right: 0.5rem;
   background: #008080;
   color: white;
+  border: 1px solid gray;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    background: #17A2B8;
+  }
 }

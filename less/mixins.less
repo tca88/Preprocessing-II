@@ -10,11 +10,12 @@
     margin: 1rem 0 0 0;
     padding: .5rem  6rem 2rem 6rem;
     border-bottom: 1px dashed black;
+    background: white;
 }
 
 .button() {
-    border-radius: 1.2rem;
-    padding: 1rem 0 1rem 0;
+    border-radius: 1.4rem;
+    padding: 1.5rem 0 1.5rem 0;
     font-size: 1.4rem;
     width: 80%;
     text-align: center;
@@ -22,6 +23,7 @@
     margin-right: .5rem;
     background: #008080;
     color: white;
+    border: 1px solid gray;
 }
 
 .mobile-padding(@top, @bottom: 0) {
@@ -29,4 +31,21 @@
     padding-bottom: @bottom;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.fade-in-mixin() {
+	&>section {
+	animation-name: fade-in;
+	animation-duration: 1.5s;
+    }
+
+    &>div {
+        animation-name: fade-in;
+        animation-duration: 1.5s;
+        }
+    
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
 }
