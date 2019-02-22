@@ -380,6 +380,7 @@ header nav a:hover {
   background: #008080;
   color: white;
   border: 1px solid gray;
+  cursor: pointer;
 }
 @media ( max-width: 500px ) {
   .home .content-pick .destination .btn {
@@ -393,5 +394,6 @@ header nav a:hover {
     background: #17A2B8;
     color: white;
     border: 1px solid gray;
+    cursor: pointer;
   }
 }
