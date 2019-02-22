@@ -383,7 +383,15 @@ header nav a:hover {
 }
 @media ( max-width: 500px ) {
   .home .content-pick .destination .btn {
+    border-radius: 1.4rem;
+    padding: 1.5rem 0 1.5rem 0;
+    font-size: 1.4rem;
     width: 100%;
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     background: #17A2B8;
+    color: white;
+    border: 1px solid gray;
   }
 }
