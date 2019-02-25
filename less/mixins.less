@@ -1,1 +1,52 @@
 // Mixins in here
+.header-mixin() {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    vertical-align: middle;
+    margin: 1rem 0 0 0;
+    padding: .5rem  6rem 2rem 6rem;
+    border-bottom: 2px dashed #C0C0C0;
+    background: white;
+}
+
+.button(@color, @btn-width) {
+    border-radius: 1.4rem;
+    padding: 1.5rem 0 1.5rem 0;
+    font-size: 1.4rem;
+    width: @btn-width;
+    text-align: center;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    background: @color;
+    color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.mobile-padding(@top, @bottom: 0) {
+    padding-top: @top;
+    padding-bottom: @bottom;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.fade-in-mixin() {
+	&>section {
+	animation-name: fade-in;
+	animation-duration: 1.5s;
+    }
+
+    &>div {
+        animation-name: fade-in;
+        animation-duration: 1.5s;
+        }
+    
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+}
